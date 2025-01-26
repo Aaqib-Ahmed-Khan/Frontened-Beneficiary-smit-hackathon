@@ -1,24 +1,24 @@
-// src/components/receptionist/RegistrationPage.jsx
+
 
 import React, { useState } from 'react';
 import { Form, Input, Button, notification } from 'antd';
-import { v4 as uuidv4 } from 'uuid'; // To generate a unique token
+import { v4 as uuidv4 } from 'uuid'; 
 
 const RegistrationPage = () => {
   const [token, setToken] = useState('');
 
   const onFinish = (values) => {
-    // Generate a unique token for the beneficiary
-    const uniqueToken = uuidv4().slice(0, 6); // Shorten token length
+  
+    const uniqueToken = uuidv4().slice(0, 6); 
     setToken(uniqueToken);
 
-    // Display the token in the confirmation message
+  
     notification.success({
       message: 'Registration Successful',
       description: `Beneficiary ${values.name} has been assigned Token: ${uniqueToken}`,
     });
 
-    // Optionally send token via SMS or email here (simulated by the notification)
+    
   };
 
   return (

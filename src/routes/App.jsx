@@ -1,11 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Layout } from 'antd';
-import AdminDashboard from '../Components/Admin/AdminDashboard'; // Import admin component
-import ReceptionistDashboard from '../Components/receptionist/ReceptionistDashboard'; // Receptionist component
-import DepartmentDashboard from '../Components/department/DepartmentDashboard'; // Department component
-import Header from '../Components/shared/Header'; // Shared Header
-import Footer from '../Components/shared/Footer'; // Shared Footer
+import AdminDashboard from '../Components/Admin/AdminDashboard'; 
+import ReceptionistDashboard from '../Components/receptionist/ReceptionistDashboard'; 
+import DepartmentDashboard from '../Components/department/DepartmentDashboard'; 
+import Header from '../Components/shared/Header'; 
+import Footer from '../Components/shared/Footer'; 
 import RegistrationPage from '../Components/receptionist/RegistrationPage';
 import DepartmentStaffInteraction from '../Components/department/departmentstaffinteraction,';';';
 const App = () => {
@@ -20,7 +20,7 @@ const App = () => {
             <Route path="/register" element={<RegistrationPage />} />
             <Route path="/department" element={<DepartmentDashboard />} />
             <Route path="/department-interaction" element={<DepartmentStaffInteraction />} />
-            {/* Add more routes for other pages */}
+      
           </Routes>
         </Layout.Content>
         <Footer />

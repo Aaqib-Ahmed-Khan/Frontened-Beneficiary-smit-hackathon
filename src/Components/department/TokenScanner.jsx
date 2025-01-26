@@ -6,7 +6,7 @@ const TokenScanner = () => {
 
   const handleScan = () => {
     console.log('Scanned Token:', token);
-    // Add logic to fetch details
+
   };
 
   return (

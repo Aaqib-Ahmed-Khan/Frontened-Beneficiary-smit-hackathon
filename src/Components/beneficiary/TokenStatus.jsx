@@ -12,5 +12,3 @@ const TokenStatus = ({ tokenNumber, status }) => {
 
 export default TokenStatus;
 
-// Example usage:
-// <TokenStatus tokenNumber="12345" status="Active" />

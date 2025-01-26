@@ -1,17 +1,17 @@
-// src/components/department/DepartmentStaffInteraction.jsx
+
 
 import React, { useState } from "react";
 import { Form, Input, Button, Table, notification } from "antd";
 import { useNavigate } from "react-router-dom";
 
 const DepartmentStaffInteraction = () => {
-  const [token, setToken] = useState(""); // To store token input by the staff
-  const [beneficiaryData, setBeneficiaryData] = useState(null); // To store beneficiary data fetched by the token
-  const [remarks, setRemarks] = useState(""); // To store the remarks entered by the staff
-  const navigate = useNavigate(); // To navigate to other pages
+  const [token, setToken] = useState(""); 
+  const [beneficiaryData, setBeneficiaryData] = useState(null); 
+  const [remarks, setRemarks] = useState(""); 
+  const navigate = useNavigate(); 
 
   const handleTokenScan = () => {
-    // Mock beneficiary data
+   
     const data = {
       name: "John Doe",
       cnic: "12345-67890",
@@ -30,12 +30,12 @@ const DepartmentStaffInteraction = () => {
       return;
     }
 
-    // Save the remarks (you can call your backend here)
+   
     notification.success({
       message: "Assistance details saved successfully!",
     });
 
-    setRemarks(""); // Reset remarks after saving
+    setRemarks(""); 
   };
 
   return (

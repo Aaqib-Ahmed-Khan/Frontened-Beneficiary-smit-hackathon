@@ -1,4 +1,4 @@
-// src/components/beneficiary/BeneficiaryPage.jsx
+
 import React from 'react';
 import { Card, Typography } from 'antd';
 
