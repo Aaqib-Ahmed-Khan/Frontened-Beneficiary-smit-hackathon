@@ -86,5 +86,4 @@ const DepartmentStaffInteraction = () => {
     </div>
   );
 };
-
 export default DepartmentStaffInteraction;

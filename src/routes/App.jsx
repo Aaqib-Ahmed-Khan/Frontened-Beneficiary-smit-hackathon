@@ -7,7 +7,8 @@ import DepartmentDashboard from '../Components/department/DepartmentDashboard';
 import Header from '../Components/shared/Header'; 
 import Footer from '../Components/shared/Footer'; 
 import RegistrationPage from '../Components/receptionist/RegistrationPage';
-import DepartmentStaffInteraction from "../Components/department/DepartmentStaffInteraction";
+import DepartmentStaffInteraction from '../Components/department/departmentstaffinteraction,';
+
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
             <Route path="/register" element={<RegistrationPage />} />
             <Route path="/department" element={<DepartmentDashboard />} />
             <Route path="/department-interaction" element={<DepartmentStaffInteraction />} />
+
       
           </Routes>
         </Layout.Content>
