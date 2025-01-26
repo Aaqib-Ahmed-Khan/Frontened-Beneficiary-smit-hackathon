@@ -7,7 +7,8 @@ import DepartmentDashboard from '../Components/department/DepartmentDashboard';
 import Header from '../Components/shared/Header'; 
 import Footer from '../Components/shared/Footer'; 
 import RegistrationPage from '../Components/receptionist/RegistrationPage';
-import DepartmentStaffInteraction from '../Components/department/departmentstaffinteraction,';';';
+import DepartmentStaffInteraction from "../Components/department/DepartmentStaffInteraction";
+
 const App = () => {
   return (
     <Router>
